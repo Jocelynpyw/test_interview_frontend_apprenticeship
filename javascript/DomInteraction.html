@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Interaction</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 90vh;
+    "
+  >
+    <div id="myText">Original Text</div>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+      const button = document.getElementById("changeTextButton");
+      const textElement = document.getElementById("myText");
+
+      button.addEventListener("click", function () {
+        textElement.textContent = "Hello, Check!";
+      });
+    </script>
+  </body>
+</html>
